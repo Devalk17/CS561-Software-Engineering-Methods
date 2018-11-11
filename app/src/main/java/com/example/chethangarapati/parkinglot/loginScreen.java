@@ -47,6 +47,8 @@ public class loginScreen extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bar.setVisibility(View.VISIBLE);
+                taking.setVisibility(View.VISIBLE);
 
                 String email = emailt.getText().toString();
                 String password = passwordt.getText().toString();
@@ -54,10 +56,14 @@ public class loginScreen extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(email)){
                     Toast.makeText(getApplicationContext(),"Enter E-mail",Toast.LENGTH_SHORT).show();
+                    bar.setVisibility(View.GONE);
+                    taking.setVisibility(View.GONE);
                 }
 
                 if(TextUtils.isEmpty(password)){
                     Toast.makeText(getApplicationContext(),"Enter Password",Toast.LENGTH_SHORT).show();
+                    bar.setVisibility(View.GONE);
+                    taking.setVisibility(View.GONE);
                 }
 
 
@@ -65,8 +71,6 @@ public class loginScreen extends AppCompatActivity {
                 Auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(loginScreen.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        bar.setVisibility(View.VISIBLE);
-                        taking.setVisibility(View.VISIBLE);
                         if(Auth.getCurrentUser().isEmailVerified()) {
                             if (!task.isSuccessful()) {
                                 bar.setVisibility(View.GONE);

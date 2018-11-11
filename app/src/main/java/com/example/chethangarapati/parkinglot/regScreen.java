@@ -180,7 +180,7 @@ public class regScreen extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 getvalues();
-                ref.child(regUi).child("Basic User Info").setValue(userinfo);
+                ref.child(regUi).child("userInfo").setValue(userinfo);
                 //Toast.makeText(getApplicationContext(),FirebaseAuth.getInstance().getCurrentUser().getEmail().toString(),Toast.LENGTH_SHORT).show();
             }
 
@@ -193,9 +193,9 @@ public class regScreen extends AppCompatActivity {
     }
 
     public void getvalues(){
-        userinfo.setEmail(emailt.getText().toString());
-        userinfo.setNickname(nickname.getText().toString());
-        userinfo.setPhonenumber(phonenum.getText().toString());
+        userinfo.setUserEmail(emailt.getText().toString());
+        userinfo.setUserNickName(nickname.getText().toString());
+        userinfo.setUserPhone(phonenum.getText().toString());
     }
 
 }

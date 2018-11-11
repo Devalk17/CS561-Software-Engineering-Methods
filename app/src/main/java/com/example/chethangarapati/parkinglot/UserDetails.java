@@ -2,38 +2,40 @@ package com.example.chethangarapati.parkinglot;
 
 public class UserDetails {
 
-    private String nickname;
-    private String Email;
-    private String phonenumber;
+    private String userNickName;
+    private String userEmail;
+    private String userPhone;
 
 
-    public UserDetails(String nickname, String email, String phonenumber) {
-        this.nickname = nickname;
-        this.Email = email;
-        this.phonenumber = phonenumber;
+    public String getUserNickName() {
+        return userNickName;
     }
 
-    public String getNickname() {
-        return nickname;
+    public void setUserNickName(String userNickName) {
+        this.userNickName = userNickName;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public String getUserEmail() {
+        return userEmail;
     }
 
-    public String getEmail() {
-        return Email;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
-    public void setEmail(String email) {
-        this.Email = email;
+    public String getUserPhone() {
+        return userPhone;
     }
 
-    public String getPhonenumber() {
-        return phonenumber;
+    public void setUserPhone(String userPhone) {
+        this.userPhone = userPhone;
     }
 
-    public void setPhonenumber(String phonenumber) {
-        this.phonenumber = phonenumber;
+    public UserDetails(String userNickName, String userEmail, String userPhone) {
+        this.userNickName = userNickName;
+        this.userEmail = userEmail;
+        this.userPhone = userPhone;
     }
+
+
 }

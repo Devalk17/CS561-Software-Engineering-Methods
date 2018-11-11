@@ -21,7 +21,8 @@
         <activity android:name=".MainScreen" />
         <activity android:name=".renterScreen" />
         <activity android:name=".granterScreen" />
-        <activity android:name=".Verification_screen"></activity>
+        <activity android:name=".Verification_screen" />
+        <activity android:name=".thankYou" />
     </application>
 
 </manifest>

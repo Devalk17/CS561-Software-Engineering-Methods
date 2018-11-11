@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">parkingLot</string>
+    <string name="title_activity_thank_you">thankYou</string>
 </resources>
