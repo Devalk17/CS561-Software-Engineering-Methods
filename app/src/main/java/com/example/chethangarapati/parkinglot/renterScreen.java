@@ -29,9 +29,6 @@ public class renterScreen extends AppCompatActivity {
 
     ArrayList<User> userList = new ArrayList<User>();
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,20 +51,14 @@ public class renterScreen extends AppCompatActivity {
                     else {
                         userList.add(user1);
                     }
-
                 }
                 //adapter.addAll(userList);
                 adapter.notifyDataSetChanged();
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
             }
         });
-
-
-
         }
     }
 
