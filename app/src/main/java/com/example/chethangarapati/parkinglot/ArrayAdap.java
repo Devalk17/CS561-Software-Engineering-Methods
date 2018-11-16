@@ -30,6 +30,8 @@ public class ArrayAdap extends ArrayAdapter<User> {
         TextView endtimet = (TextView) convertView.findViewById(R.id.endtime);
         TextView datet = (TextView) convertView.findViewById(R.id.date);
         TextView feet = (TextView) convertView.findViewById(R.id.fee);
+        TextView ht = (TextView) convertView.findViewById(R.id.housetype);
+        TextView pn = (TextView) convertView.findViewById(R.id.parkingno);
 
         emailt.setText("E-mail: "+user.getUserInfo().getUserEmail());
         phonenumbert.setText("No: "+user.getUserInfo().getUserPhone());
@@ -38,6 +40,8 @@ public class ArrayAdap extends ArrayAdapter<User> {
         endtimet.setText("End Time:"+user.getGrantingInfo().getEndTime());
         datet.setText("Date: "+user.getGrantingInfo().getParkingDate());
         feet.setText("Fee($): "+user.getGrantingInfo().getParkingFee());
+        ht.setText("House Type:"+user.getGrantingInfo().getHouseType());
+        pn.setText("Parking NO:"+user.getGrantingInfo().getParkingNo());
 
         return convertView;
     }

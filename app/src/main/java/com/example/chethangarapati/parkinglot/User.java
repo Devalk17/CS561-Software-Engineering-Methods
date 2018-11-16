@@ -33,25 +33,11 @@ public class User {
         String endTime;
         String parkingFee;
         String parkingDate;
-
-        public String getHouseType() {
-            return houseType;
-        }
-
-        public void setHouseType(String houseType) {
-            this.houseType = houseType;
-        }
-
-        public String getParkingNo() {
-            return parkingNo;
-        }
-
-        public void setParkingNo(String parkingNo) {
-            this.parkingNo = parkingNo;
-        }
-
         String houseType;
         String parkingNo;
+
+
+
         public GrantingInfo() {
         }
 
@@ -94,6 +80,23 @@ public class User {
         public void setParkingDate(String parkingDate) {
             this.parkingDate = parkingDate;
         }
+        public String getHouseType() {
+            return houseType;
+        }
+
+        public void setHouseType(String houseType) {
+            this.houseType = houseType;
+        }
+
+        public String getParkingNo() {
+            return parkingNo;
+        }
+
+        public void setParkingNo(String parkingNo) {
+            this.parkingNo = parkingNo;
+        }
+
+
     }
     public static class UserInfo
     {

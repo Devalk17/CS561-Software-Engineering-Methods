@@ -31,6 +31,9 @@
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:layout_below="@+id/phonenumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="38dp"
         android:text="Address:"
         android:textSize="14sp" />
 
@@ -49,10 +52,10 @@
         android:layout_width="133dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/phonenumber"
-        android:layout_marginLeft="86dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="91dp"
         android:layout_toRightOf="@+id/starttime"
-        android:text="endtime:"
+        android:text="Endtime:"
         android:textSize="14sp" />
 
     <TextView
@@ -61,7 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/endtime"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26dp"
         android:text="Date:"
         android:textSize="14sp" />
 
@@ -75,5 +79,22 @@
         android:layout_marginTop="-20dp"
         android:text="Fee:"
         android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/housetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phonenumber"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:text="House Type:" />
+
+    <TextView
+        android:id="@+id/parkingno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/endtime"
+        android:layout_alignTop="@+id/housetype"
+        android:text="Parking No:" />
 
 </RelativeLayout>

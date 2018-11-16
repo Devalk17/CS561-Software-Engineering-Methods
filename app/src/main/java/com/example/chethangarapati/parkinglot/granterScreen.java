@@ -108,7 +108,7 @@ public class granterScreen extends AppCompatActivity {
     }
 
         public void updatedb () {
-            Log.d("executing", "in db");
+            //Log.d("executing", "in db");
             Toast.makeText(getApplicationContext(), "in db", Toast.LENGTH_SHORT).show();
             final String house_type;
             final String parkingnum;

@@ -23,6 +23,10 @@
         <activity android:name=".granterScreen" />
         <activity android:name=".Verification_screen" />
         <activity android:name=".thankYou" />
+        <activity android:name=".historyScreen" />
+        <activity android:name=".rentedHistory" />
+        <activity android:name=".granterhistory" />
+        <activity android:name=".booking"></activity>
     </application>
 
 </manifest>

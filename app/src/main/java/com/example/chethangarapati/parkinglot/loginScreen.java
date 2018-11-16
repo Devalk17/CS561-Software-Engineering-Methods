@@ -43,6 +43,9 @@ public class loginScreen extends AppCompatActivity {
         bar.setVisibility(View.GONE);
         taking.setVisibility(View.GONE);
 
+        emailt.setText("garapatc@oregonstate.edu");
+        passwordt.setText("123456");
+
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
