@@ -42,6 +42,17 @@ public class MainScreenTest {
 
     }
 
+@Test
+    public void TestLaunchOfGranterButton(){
+
+        assertNotNull(mainScreenActivity.findViewById(R.id.granterButton));
+
+        onView(withId(R.id.granterButton)).perform(click());
+        Activity activitynext = getInstrumentation().waitForMonitorWithTimeout(monitorGrant,10000);
+        assertNotNull(activitynext);
+        activitynext.finish();
+
+    }
 
     @After
     public void tearDown() throws Exception {

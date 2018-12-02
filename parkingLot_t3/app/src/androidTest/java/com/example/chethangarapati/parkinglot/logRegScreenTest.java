@@ -30,18 +30,6 @@ public class logRegScreenTest {
     }
 
     @Test
-    public void TestLoginButton(){
-
-        assertNotNull(logregScreeActivity.findViewById(R.id.login));
-
-        onView(withId(R.id.login)).perform(click());
-        Activity loginClick = getInstrumentation().waitForMonitorWithTimeout(monitorlogin,50000);
-        assertNotNull(loginClick);
-        loginClick.finish();
-
-    }
-
-    @Test
     public void TestRegisterButton(){
 
         assertNotNull(logregScreeActivity.findViewById(R.id.regButton));
@@ -50,6 +38,18 @@ public class logRegScreenTest {
         Activity loginRegister = getInstrumentation().waitForMonitorWithTimeout(monitorRegister,10000);
         assertNotNull(loginRegister);
         loginRegister.finish();
+
+    }
+
+    @Test
+    public void TestLoginButton(){
+
+        assertNotNull(logregScreeActivity.findViewById(R.id.login));
+
+        onView(withId(R.id.login)).perform(click());
+        Activity loginClick = getInstrumentation().waitForMonitorWithTimeout(monitorlogin,50000);
+        assertNotNull(loginClick);
+        loginClick.finish();
 
     }
 
